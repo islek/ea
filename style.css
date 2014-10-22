@@ -1,0 +1,75 @@
+/* Codes couleurs du site : 
+- vert fonçé : #53B200
+- vert clair : #9BFF44
+- rose clair : #E800FF
+- rose + clair : #F1A6FF
+- rose fonçé : #9700B2
+*/
+
+
+/* balises HTML5 */
+
+body
+{
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  background-color:white;
+}
+
+nav{
+	float: right;
+}
+
+footer {
+	background-color: white;
+}
+
+/* éléments de texte */
+
+h1 {
+	color : #53B200;
+}
+
+h2 {
+	color : #9BFF44;
+}
+
+nav li {
+	display:block;
+	float:left;
+	margin-left: 40px;
+}
+
+/* id */
+
+#slideshow {
+	background: url(paris1.jpg) no-repeat center center;
+	background-size: cover;
+	height: 700px;
+}
+
+#presentation {
+	background-color: white;
+}
+
+#newsletter {
+	background-color: white;
+}
+
+#chat {
+	background-color: white;
+}
+
+#modules {
+	background-color: white;
+}
+
+#contact {
+	background-color: white;
+}
+
+/* class */
+
+.clear{
+	clear:both;
+}
