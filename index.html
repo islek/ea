@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Entrepreneur Academy</title>
 	<meta charset="utf-8"/>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
 <header>
-	<p><img src="logo.jpg"></p>
 
+	<div id="logo">
+		<p><img src="logo.jpg" class="img-responsive" alt="Responsive image"></p>
+	</div>
+
+	<div class="pull-right">
 	<nav>
-		<ul>
-		<li>Newsletter</li>
-		<li>Modules</li>
-		<li>Inscription</li>
-		<li>FAQ</li>
+		<ul class="list-inline">
+		<li><a class="btn">Newsletter</a></li>
+		<li><a class="btn">Modules</a></li>
+		<li><a class="btn">Inscription</a></li>
+		<li><a class="btn">FAQ</a></li>
 		</ul>
 	</nav>
+	</div>
 
-	<div class="clear"></div>
+	<div class="clearfix"></div>
 
 </header>
 
@@ -35,6 +45,13 @@
 
 <section id="newsletter">
 	<h2>Newsletter</h2>
+			<form class="form-inline" role="form">
+  		<div class="form-group">
+    		<label for="mail">Email</label>
+    		<input type="email" class="form-control" id="mail" placeholder="Enter email">
+    		<input type="submit" value="Sign in" class="btn btn-primary">
+  		</div>
+			</form>
 </section>
 
 <section id="chat">
@@ -42,25 +59,78 @@
 </section>
 
 <section id="modules">
-	<h2>Choix des modules de elearning</h2>
-	<ul>
-	<li>Business plan</li>
-	<li>Etude de marché</li>
-	<li>Analyse juridique</li>
-	</ul>
+
+	<div class="container">
+  		<div class="row">
+    		<div class="col-md-4 col-md-offset-2 ">
+      		<h2>Choix des modules de elearning</h2>
+    		</div> <!-- end col-md-offsed-2 -->
+    		<div class="col-md-4">
+     			<ul>
+			<li>Business plan</li>
+			<li>Etude de marché</li>
+			<li>Analyse juridique</li>
+				</ul>
+    		</div> <!-- end col-md-4 -->
+  		</div> <!-- end row -->
+	</div> <!-- end container -->
+
 </section>
 
 <section id="contact">
 	<h2>Formulaire d'inscription</h2>
+	<form class="form-inline" role="form">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-addon">@</div>
+      <input class="form-control" type="email" placeholder="Enter email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword2">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Sign in</button>
+</form>
 </section>
 
+<div class="pull-right">
 <footer>
-	<ul>
-		<li>CGU</li>
-		<li>Mentions légales</li>
-		<li>FAQ</li>
-	</ul>
+  		<div class="container">
+    		<div class="row">
+      		<div class="col-xs-4">
+      				<ul class="list-inline">
+				<li>CGU</li>
+				<li>Mentions légales</li>
+				<li>FAQ</li>
+					</ul>
+        		<div id="social-links">
+          		<!--your social links-->
+        		</div>
+      		</div>
+      		<div class="col-xs-8">
+      		</div>
+    		</div>
+  		</div>
 </footer>
+<div>
+
+<div class="clearfix"></div>
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>

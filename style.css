@@ -16,12 +16,9 @@ body
   background-color:white;
 }
 
-nav{
-	float: right;
-}
-
 footer {
 	background-color: white;
+	margin-top
 }
 
 /* éléments de texte */
@@ -34,12 +31,6 @@ h2 {
 	color : #9BFF44;
 }
 
-nav li {
-	display:block;
-	float:left;
-	margin-left: 40px;
-}
-
 /* id */
 
 #slideshow {
@@ -48,28 +39,46 @@ nav li {
 	height: 700px;
 }
 
-#presentation {
+#presentation, #newsletter, #chat, #modules, #contact {
 	background-color: white;
 }
 
-#newsletter {
-	background-color: white;
-}
-
-#chat {
-	background-color: white;
-}
-
-#modules {
-	background-color: white;
-}
-
-#contact {
-	background-color: white;
+#logo {
+	float:left;
 }
 
 /* class */
 
-.clear{
-	clear:both;
+.btn-primary {
+  background-color: green;
+  border-color: yellow;
 }
+
+.btn-primary:hover {
+  background-color: #16a085;
+  border-color: #16a085;
+}
+
+/* at-rule */
+
+@media (max-width:320px) {  /*small mobile*/
+  h1 {
+    background-color: red;
+  }
+}
+@media (min-width:321px) and (max-width:959px) {  /*tablet*/
+  h1 {
+    background-color: green; 
+  }
+}
+@media (min-width:960px) and (max-width:1599px) {  /*desktop*/
+  h1 {
+    background-color: blue;
+  }
+}
+@media (min-width:1600px) {  /*desktop and tv*/
+  h1 {
+    background-color: yellow;
+  }
+}
+
