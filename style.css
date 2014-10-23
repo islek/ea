@@ -49,14 +49,14 @@ h2 {
 
 /* class */
 
-.btn {
-  background-color: #53B200;
-  border-color: #9BFF44;
+.btn-primary {
+  background-color: green;
+  border-color: yellow;
 }
 
-.btn:hover {
-  background-color: #9700B2;
-  border-color: #E800FF;
+.btn-primary:hover {
+  background-color: #16a085;
+  border-color: #16a085;
 }
 
 /* at-rule */
