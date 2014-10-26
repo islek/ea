@@ -3,7 +3,7 @@
 - vert clair : #9BFF44
 - rose clair : #E800FF
 - rose + clair : #F1A6FF
-- rose fonçé : #9700B2
+- violet : #9700B2
 */
 
 
@@ -14,71 +14,135 @@ body
   font-family: 'Raleway', sans-serif;
   color: black;
   background-color:white;
+  padding-top: 70px;
 }
 
 footer {
-	background-color: white;
-	margin-top
+	margin-top: 20px;
+  margin-bottom: 40px;
+  padding-top:20px;
+  background-color: black;
+  color:white;
 }
 
-/* éléments de texte */
+/* éléments inline */
 
 h1 {
 	color : #53B200;
+  text-align: center;
 }
 
 h2 {
 	color : #9BFF44;
+  text-align: center;
 }
 
-/* id */
-
-#slideshow {
-	background: url(paris1.jpg) no-repeat center center;
-	background-size: cover;
-	height: 700px;
+p{
+  text-align: center;
 }
 
-#presentation, #newsletter, #chat, #modules, #contact {
-	background-color: white;
+strong {
+  color :#9700B2;
 }
 
-#logo {
-	float:left;
+footer a{
+  color :white;
 }
 
-/* class */
-
-.btn-primary {
-  background-color: green;
-  border-color: yellow;
+footer a:hover {
+  text-decoration:none;
+  color :#E800FF;
 }
 
-.btn-primary:hover {
-  background-color: #16a085;
-  border-color: #16a085;
+/* navbar */
+
+.container-fluid {
+  background-color:#9BFF44;
+}
+
+/* carousel */
+
+.item .carousel-caption p {
+  color:#53B200;
+  padding : 70px;
+  font-weight: bold;
+  font-size:1.3em;
+}
+
+.item .carousel-caption {
+  background-color: white;
+  opacity: 0.5;
+}
+
+/* collapse */
+
+.panel-group img {
+  margin: 0 auto;
+}
+
+.panel-group {
+  text-align: center;
+}
+
+.panel-title {
+  font-weight: bold
 }
 
 /* at-rule */
 
 @media (max-width:320px) {  /*small mobile*/
   h1 {
-    background-color: red;
-  }
+  color : #9700B2;
+  text-align: center;
+}
+  h2 {
+  color : #E800FF;
+  text-align: center;
+}
+  strong {
+  color :#53B200;
+}
+  body
+{
+  color: white;
+  background-color:black;
+  padding-top: 70px;
+}
+.panel-body{
+  background-color:black;
+}
+
 }
 @media (min-width:321px) and (max-width:959px) {  /*tablet*/
-  h1 {
-    background-color: green; 
-  }
+   h1 {
+  color : #9700B2;
+  text-align: center;
+}
+  h2 {
+  color : #E800FF;
+  text-align: center;
+}
+  strong {
+  color :#53B200;
+}
+  body
+{
+  color: white;
+  background-color:black;
+  padding-top: 70px;
+}
+.panel-body{
+  background-color:black;
+}
 }
 @media (min-width:960px) and (max-width:1599px) {  /*desktop*/
   h1 {
-    background-color: blue;
+    background-color: none;
   }
 }
 @media (min-width:1600px) {  /*desktop and tv*/
   h1 {
-    background-color: yellow;
+    background-color: none;
   }
 }
 
